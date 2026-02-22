@@ -1,3 +1,14 @@
+# 0. 배포 타겟 리전 변수
+variable "region" {
+  description = "인프라가 배포될 AWS 리전"
+  type        = string
+  default     = "ap-northeast-2"
+}
+
+
+
+
+
 # 1. 온프레미스 IDC 예약 대역 (모든 하이브리드 설계의 기준점)
 variable "onprem_cidr" {
   description = "기존에 사용 중인 온프레미스 IDC 네트워크 대역"

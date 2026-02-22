@@ -16,6 +16,9 @@ remote_state {
   }
 }
 
+
+
+
 # 모든 리소스에 공통으로 들어갈 글로벌 태그 정의
 inputs = {
   default_tags = {

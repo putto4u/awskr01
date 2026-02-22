@@ -1,3 +1,10 @@
+# 0. AWS 프로바이더 설정: 전달받은 region 변수를 사용하여 배포 위치를 확정합니다.
+provider "aws" {
+  region = var.region
+}
+
+
+
 # AWS 공식 VPC 모듈을 호출하여 AWS의 권장 표준에 맞춘 네트워크 망을 생성합니다.
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"

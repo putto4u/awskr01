@@ -10,6 +10,7 @@ terraform {
 
 # variables.tf에 정의된 변수들에 최종적으로 덮어씌울 실제 값들입니다.
 inputs = {
+  region           = "ap-northeast-2" # [추가] 한국 리전으로 명확히 주입
   onprem_cidr      = "10.10.0.0/16"
   vpc_cidr         = "10.20.0.0/16"
   enable_nat       = true
