@@ -1,0 +1,30 @@
+# .gitignore 파일 내용
+
+# 1. Terraform 및 Terragrunt 로컬 캐시 디렉토리
+.terraform/
+.terragrunt-cache/
+**/.terraform/*
+**/.terragrunt-cache/*
+
+# 2. 인프라 실물 정보가 평문으로 담긴 상태 파일 (절대 업로드 금지)
+*.tfstate
+*.tfstate.*
+
+# 3. 크래시 로그 및 재정의 파일
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# 4. 자격 증명 및 로컬 환경 변수 파일
+*.tfvars
+*.tfvars.json
+.env
+secret.tfvars
+credentials.csv
+
+# 5. OS 생성 임시 파일 (macOS 및 Windows)
+.DS_Store
+Thumbs.db
+
